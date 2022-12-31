@@ -32,6 +32,12 @@ body{
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+#newyear2{
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0.5rem;
+    color: rgb(244, 246, 248);
+}
 @keyframes newyear {
     0%{
         color: rgb(223, 133, 16);
