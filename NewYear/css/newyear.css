@@ -4,6 +4,7 @@ body{
     background: url("../img/bg.webp");
     margin: 0px;
     padding: 0px;
+    z-index: -1;
 }
 /* header style */
 .head{
