@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sevillana&display=swap');
+/* reset style */
+body{
+    background: url("../img/bg.webp");
+    margin: 0px;
+    padding: 0px;
+}
+/* header style */
+.head{
+    font-family: 'Sevillana', cursive;
+    height: 8rem;
+    background: url("../img/2023-1.jpg")repeat-x center;
+    background-size: 6rem;
+}
+
+
+.head::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    height:30em;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#newyear{
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0.5rem;
+    animation: newyear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes newyear {
+    0%{
+        color: rgb(223, 133, 16);
+    }
+    20%{
+        color: rgb(245, 229, 13);
+    }
+    40%{
+        color: rgb(84, 245, 10);
+    }
+    60%{
+        color: rgb(8, 235, 235);
+    }
+    80%{
+        color: rgba(58, 7, 241, 0.596);
+    }
+    100%{
+        color: rgb(223, 14, 241);
+    }
+}
+/* body style */
+.body{
+    font-size: 1rem;
+    /* background-color: azure; */
+}
+.wishes{
+    display: grid;
+    grid-template-columns: 2fr 2.5fr  ;
+    grid-template-rows: 2fr 2fr;
+    
+}
+.box{
+    background-color: rgb(231, 208, 208);
+    height: 100%;
+    width: 100%;
+    font-size: 0.7rem;
+}
+#box1{
+    background: url("../img/firework.jfif");
+    color: aliceblue;
+}
+#box3{
+    background: url("../img/firework2.jfif");
+    color: antiquewhite;
+    font-size:1.2rem ;
+}
+#box4{
+    background: url("../img/firework3.jfif");
+    color: blanchedalmond;
+}
+.box3 h2{
+    font-size: 1.1rem;
+}
+.box3{
+    height: max;
+}
+
+/* @keyframes msg {
+    0%{
+        color: antiquewhite;
+    }
+    20%{
+        color: rgb(157, 221, 221);
+    }
+    40%{
+        color: bisque;
+    }
+    60%{
+        color: rgb(198, 155, 238);
+    }
+    80%{
+        color: rgba(176, 161, 231, 0.596);
+    }
+    100%{
+        color: rgb(182, 182, 221);
+    }
+} */
+.box1{
+    grid-row: 1/span 1;
+}
+.box2{
+    grid-row: 1 / span 3;
+    height: 100%;
+    animation: bgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+#box2 h3{
+    font-family: 'Poppins', sans-serif;
+    color: #fbbe75;
+    /* font-size: 1rem;
+    color: rgb(55, 14, 238); */
+}
+@keyframes bgchange {
+    0%{
+        background: url("../img/orchhid.jpg")no-repeat center center/cover;
+    }
+    50%{
+        background: url("../img/orchhid-2.jpg")no-repeat center center/cover;;
+    }
+    100%{
+        background: url("../img/orchids.jpg") center center/cover;
+    }
+}
+#myname{
+    color: rgb(12, 238, 12);
+    font-family: 'Times New Roman', Times, serif;
+}
+/* footer style */
+.footer{
+    text-align: center;
+    justify-content: center;
+    background-color: aquamarine;
+    position: sticky;
+    bottom: 0px;
+}
