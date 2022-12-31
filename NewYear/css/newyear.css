@@ -140,6 +140,7 @@ body{
 }
 #myname{
     color: rgb(12, 238, 12);
+    font-family: 'Times New Roman', Times, serif;
 }
 /* footer style */
 .footer{
